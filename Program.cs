@@ -50,3 +50,10 @@ else if (countEastWest > 0)
     System.Console.WriteLine($"{countEastWest}m east ");
 }
 
+double Linear = (countEastWest * countEastWest) + (countNorthSouth * countNorthSouth);
+double LinearDistance = Math.Sqrt(Linear);
+
+int manhattanDistance = countEastWest + countNorthSouth;
+
+System.Console.WriteLine($"the manhattan distance is {manhattanDistance}m");
+System.Console.WriteLine($"the linear distance is {LinearDistance}m");
